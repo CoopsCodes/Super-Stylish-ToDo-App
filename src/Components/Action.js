@@ -5,7 +5,7 @@ const Action = (props) => {
 		<div>
 			<button
 				className="big-button"
-				onCLick={props.handlePick}
+				onClick={props.handlePick}
 				disabled={!props.hasOptions}
 			>
 				Can't Decide?

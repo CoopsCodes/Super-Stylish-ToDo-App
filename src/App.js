@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import Action from "./Components/Action";
 import Options from "./Components/Options";
 import AddOption from "./Components/AddOption";
+import OptionModal from "./Components/Modal";
 import "./App.scss";
 
 class App extends React.Component {
@@ -18,7 +19,6 @@ class App extends React.Component {
 			if (options) {
 				this.setState(() => ({ options: options }));
 			}
-			console.log("Mounted");
 		} catch (error) {
 			console.log("Error in componentDidMount try-catch", error);
 		}
@@ -28,7 +28,6 @@ class App extends React.Component {
 		if (prevState.options.length !== this.state.options.length) {
 			const json = JSON.stringify(this.state.options);
 			localStorage.setItem("options", json);
-			console.log("Updated");
 		}
 	};
 
@@ -70,6 +69,10 @@ class App extends React.Component {
 		}));
 	};
 
+	closeModal = () => {
+		this.setState(() => ({ selectedOption: undefined }));
+	};
+
 	render() {
 		const title = "To Do: ";
 		const subTitleText = "A To-Do list for the stylish person!";
@@ -78,7 +81,7 @@ class App extends React.Component {
 				<Header subTitle={subTitleText} title={title} />
 				<div className="container">
 					<Action
-						hasOptions={this.state.length > 0}
+						hasOptions={this.state.options.length > 0}
 						handlePick={this.handlePick}
 					/>
 					<div className="widget">
@@ -90,6 +93,10 @@ class App extends React.Component {
 						<AddOption handleAddOption={this.handleAddOption} />
 					</div>
 				</div>
+				<OptionModal
+					selected={this.state.selectedOption}
+					closeModal={this.closeModal}
+				/>
 			</div>
 		);
 	}
