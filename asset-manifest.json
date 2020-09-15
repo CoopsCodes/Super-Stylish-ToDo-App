@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Super-Stylish-ToDo-App/static/css/main.143ecbe2.chunk.css",
+    "main.js": "/Super-Stylish-ToDo-App/static/js/main.871ffb26.chunk.js",
+    "main.js.map": "/Super-Stylish-ToDo-App/static/js/main.871ffb26.chunk.js.map",
+    "runtime-main.js": "/Super-Stylish-ToDo-App/static/js/runtime-main.a27faf48.js",
+    "runtime-main.js.map": "/Super-Stylish-ToDo-App/static/js/runtime-main.a27faf48.js.map",
+    "static/css/2.764ccc25.chunk.css": "/Super-Stylish-ToDo-App/static/css/2.764ccc25.chunk.css",
+    "static/js/2.0447e89c.chunk.js": "/Super-Stylish-ToDo-App/static/js/2.0447e89c.chunk.js",
+    "static/js/2.0447e89c.chunk.js.map": "/Super-Stylish-ToDo-App/static/js/2.0447e89c.chunk.js.map",
+    "index.html": "/Super-Stylish-ToDo-App/index.html",
+    "precache-manifest.a490996545483f972feab7a9ff6c9605.js": "/Super-Stylish-ToDo-App/precache-manifest.a490996545483f972feab7a9ff6c9605.js",
+    "service-worker.js": "/Super-Stylish-ToDo-App/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/Super-Stylish-ToDo-App/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.143ecbe2.chunk.css.map": "/Super-Stylish-ToDo-App/static/css/main.143ecbe2.chunk.css.map",
+    "static/js/2.0447e89c.chunk.js.LICENSE.txt": "/Super-Stylish-ToDo-App/static/js/2.0447e89c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a27faf48.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.0447e89c.chunk.js",
+    "static/css/main.143ecbe2.chunk.css",
+    "static/js/main.871ffb26.chunk.js"
+  ]
+}
